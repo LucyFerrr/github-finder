@@ -13,24 +13,6 @@ export const GithubProvider = ({ children }) => {
 
   const [state, dispatch] = useReducer(githubReducer, initialState);
 
-  // Get initial users (Testing Purposes)
-  // const fetchUsers = async () => {
-  //   setLoading();
-  //   const response = await fetch(`${GITHUB_URL}/users`, {
-  //     headers: {
-  //       Authorization: `token ${GITHUB_TOKEN}`,
-  //     },
-  //   });
-
-  //   const data = await response.json();
-  //   console.log(data);
-
-  //   dispatch({
-  //     type: "GET_USERS",
-  //     payload: data,
-  //   });
-  // };
-
   return (
     <GithubContext.Provider
       value={{

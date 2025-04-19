@@ -37,8 +37,7 @@ function User() {
     public_gists,
     hireable,
   } = user;
-  console.log(user);
-  console.log(repos);
+
   if (loading) return <Spinner />;
 
   return (
